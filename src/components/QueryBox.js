@@ -2,7 +2,7 @@ import React from 'react';
 
 function QueryBox() {
   return <div>
-    Rendering Query Box!
+    <h1>Rendering Query Box</h1>
   </div>;
 }
 
