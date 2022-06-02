@@ -11,11 +11,29 @@ function LoggerResponse(props) {
   // }
   return (
     <div>
-      <StyledSuccess> 
-       {props.sucessfail}
-       {props.query}
-       {props.response}
-      </StyledSuccess>
+    {props.successfail ?  (
+      <>
+        <StyledSuccess> 
+          SUCCESS: {props.sucessfail}
+          {props.query}
+          {props.response}
+        </StyledSuccess>
+      </>
+    )  :  
+     (
+      <>
+        <StyledError> 
+          ERROR: {props.sucessfail}
+          {props.query}
+          {props.response}
+         </StyledError>
+      </>
+    )  
+    }
+
+
+
+
     </div>
   )
 }

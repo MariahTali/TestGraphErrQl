@@ -16,10 +16,7 @@ function LoggerBox() {
   };
 
   const addNextItemToArray = (index) => {
-    // console.log(index)
-    // console.log(mockData[index])
     responseArray.push(mockData[index])
-    console.log(responseArray);
   };
 
 const newArray = []
@@ -43,53 +40,5 @@ for (let i = 0; i < responseArray.length; i++) {
     </>
   )
 }
-
-// function LoggerBox() {
-//   //onclick of "simulate query" button
-
-//   const [queryResponse, setQueryResponse] = useState([])
-
-//   const addQueryResponse = (newQuery) => {
-//       setQueryResponse(prevQueries => {
-//           return [...prevQueries, newQuery]
-//       })
-//   }
-
-// }
-
-// const addQuery = (mockData) => {
-
-// }
-
-//   return (
-
-//     <div>
-//         <button onClick={addQuery}>Simulate Query</button>
-//         {queryResponse.map((query, index) => {
-//             return (
-//                 <LoggerResponse key = {index}  />
-//             )
-//         })}
-//     </div>
-
-//   );
-
-  //   const responseArray = []
-  //   const [responseBox, setResponseBox] = useState(responseArray)
-
-  // const addNextItemToArray = (mockData) {
-
-  // }
-
-  // return (
-  //     <div>
-  //     <button onClick={() => setArrayIndex(responseArray.push())}>
-  //       Simulate Query
-  //       </button>
-  //     <LoggerResponse data = {mockData[arrayIndex]} />
-  //   </div>
-
-  // )
-// }
 
 export default LoggerBox;
