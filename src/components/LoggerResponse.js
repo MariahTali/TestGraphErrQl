@@ -1,27 +1,22 @@
 import {React, useState, useEffect} from 'react'
 import { StyledSuccess, StyledError } from './styles/LoggerResponse.styled'
 
-function LoggerResponse() {
+function LoggerResponse(props) {
   
-  const handleClickSuccess = e => {
-    console.log(" Success clicked!")
-  }
-  const handleClickError = e => {
-    console.log(" Error clicked!")
-  }
+  // const handleClickSuccess = e => {
+  //   console.log(" Success clicked!")
+  // }
+  // const handleClickError = e => {
+  //   console.log(" Error clicked!")
+  // }
   return (
-    <>
-    <div onClick={handleClickSuccess}>
-    <StyledSuccess>
-      Success
-     </StyledSuccess>
+    <div>
+      <StyledSuccess> 
+       {props.sucessfail}
+       {props.query}
+       {props.response}
+      </StyledSuccess>
     </div>
-    <div onClick={handleClickError}>
-   <StyledError>
-      Error
-     </StyledError>
-   </div>
-   </>
   )
 }
 
