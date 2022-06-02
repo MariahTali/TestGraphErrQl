@@ -1,7 +1,5 @@
-import { React, useState, useEffect } from 'react';
+import { React, useState} from 'react';
 import LoggerResponse from './LoggerResponse';
-import styled from 'styled-components';
-// import { StyledBody } from './styles/LoggerBox.styled';
 import { mockData } from './mockData';
 
 const responseArray = [];

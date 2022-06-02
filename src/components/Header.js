@@ -1,5 +1,4 @@
-import { React, useState, useEffect } from 'react';
-import styled from 'styled-components';
+import { React, useState} from 'react';
 import LoggerBox from './LoggerBox';
 import QueryBox from './QueryBox';
 import logo from '../images/GraphErrlogo.svg';

@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from './components/Header';
-import LoggerBox from './components/LoggerBox';
+import Header from './components/Header'
 
 function App() {
   return (
