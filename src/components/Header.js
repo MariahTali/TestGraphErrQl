@@ -4,7 +4,9 @@ import LoggerBox from './LoggerBox';
 import QueryBox from './QueryBox';
 import logo from '../images/GraphErrlogo.svg';
 import { BsToggle2Off, BsToggle2On, BsPlayCircle } from 'react-icons/bs';
-import { Logo, StyledHeader, StyledBody} from './styles/Header.styled';
+import { Logo, StyledHeader} from './styles/Header.styled';
+import { StyledBody } from './styles/LoggerBox.styled';
+
 
 function Header() {
   const [liveMode, setLiveMode] = useState(false);
