@@ -1,8 +1,8 @@
 import { React, useState} from 'react';
-import LoggerResponse from './LoggerResponse';
+import Log from './Log';
 import { mockData } from './mockData';
 
-const responseArray = [];
+const mockLogs = [];
 
 function LoggerBox() {
   let index = 0;
@@ -14,13 +14,13 @@ function LoggerBox() {
   };
 
   const addNextItemToArray = (index) => {
-    responseArray.push(mockData[index])
+    mockLogs.push(mockData[index])
   };
 
-const newArray = []
+const logs = []
 
-for (let i = 0; i < responseArray.length; i++) {
-  newArray.push(<LoggerResponse key = {i} successfail = {responseArray[i].success} query = {responseArray[i].query} response = {responseArray[i].response}/>)  
+for (let i = 0; i < mockLogs.length; i++) {
+  logs.push(<Log key = {i} success = {mockLogs[i].success} query = {mockLogs[i].query} response = {mockLogs[i].response}/>)  
 }
 
   return(
@@ -33,7 +33,7 @@ for (let i = 0; i < responseArray.length; i++) {
         Simulate Query
       </button>
      <div>
-       {newArray}
+       {logs}
      </div>
     </>
   )
