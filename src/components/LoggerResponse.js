@@ -33,8 +33,6 @@ const [errorResponseBox, setErrorResponseBox] = useState(false)
               ERROR: {props.successfail}
               &nbsp;
               {props.query}
-              &nbsp;
-              {props.response}
             </StyledError>
           </div>
 
