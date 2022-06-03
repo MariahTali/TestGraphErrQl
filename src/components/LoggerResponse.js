@@ -48,3 +48,4 @@ const [errorResponseBox, setErrorResponseBox] = useState(false)
 }
 
 export default LoggerResponse
+
