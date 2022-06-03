@@ -1,13 +1,15 @@
 import {React, useState} from 'react'
 import ErrorResponseBox from './ErrorResponseBox'
 import { StyledSuccess, StyledError } from './styles/LoggerResponse.styled'
+import SuccessResponseBox from './SuccessResponseBox'
 
 function LoggerResponse(props) {
-  
+  console.log(props.response);
 const [errorResponseBox, setErrorResponseBox] = useState(false)
+const [successResponse, setSuccessResponse] = useState(false);
 
   const handleClickSuccess = () => {
-    console.log(" Success clicked!")
+    setSuccessResponse(current => !current);
   }
   const handleClickError = () => {
     setErrorResponseBox(current => !current);
@@ -18,20 +20,23 @@ const [errorResponseBox, setErrorResponseBox] = useState(false)
     <div>
       {props.successfail ? (
         <div onClick={handleClickSuccess}>
-          <StyledSuccess>
-            SUCCESS: {props.successfail}
-            &nbsp;
-            {props.query}
-            &nbsp;
-            {props.response}
-          </StyledSuccess>
+          <div>
+            <StyledSuccess>
+              SUCCESS: &nbsp;
+              {props.query}
+            </StyledSuccess>
+            <div>
+              {successResponse && (
+                <SuccessResponseBox response={props.response} />
+              )}
+            </div>
+          </div>
         </div>
       ) : (
         <div onClick={handleClickError}>
           <div>
             <StyledError>
-              ERROR: {props.successfail}
-              &nbsp;
+              ERROR: &nbsp;
               {props.query}
             </StyledError>
           </div>
