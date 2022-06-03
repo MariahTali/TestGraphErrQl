@@ -6,5 +6,4 @@ export const StyledBody = styled.body`
   color: #ffffff;
   padding: 20px 10px;
   height: 80vh;
-  overflow-y: scroll;
 `;
