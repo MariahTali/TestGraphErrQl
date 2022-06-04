@@ -24,7 +24,6 @@ function Header() {
           liveMode={liveMode}
           handleToggleClick={handleToggleClick}
         />
-        {/* // if livemode is on, render loggerbox and toggleonIcon */}
       </StyledHeader>
       <StyledBody>{liveMode ? <LoggerBox /> : <QueryBox />}</StyledBody>
     </div>

@@ -7,7 +7,6 @@ function HeaderItemContainer({ liveMode, handleToggleClick }) {
       <>
         <StyledHeaderItemContainer>
           <BsPlayCircle size='4em' color={liveMode ? 'white' : '#003845'} />
-          {/* <p style={{ color: 'white' }}>test</p> */}
         </StyledHeaderItemContainer>
         <StyledHeaderItemContainer>
           <p></p>
@@ -26,8 +25,6 @@ function HeaderItemContainer({ liveMode, handleToggleClick }) {
           )}
           <p style={{ color: 'white' }}>Live Mode</p>
         </StyledHeaderItemContainer>
-
-        {/* <LoggerBox /> */}
       </>
     </>
   );
