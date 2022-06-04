@@ -39,16 +39,16 @@ export const mockData = [
        "exception": {
          "stacktrace": [
            "GraphQLError: Field \\"feed\\" argument \"type\" of type \"FeedType!\" is required, but it was not provided.",
-           "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/validation/rules/ProvidedRequiredArgumentsRule.js:60:15)",
-           "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/language/visitor.js:326:32)",
-           "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/utilities/TypeInfo.js:411:21)",
-           "    at visit (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/language/visitor.js:200:21)",
-           "    at validate (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/validation/validate.js:91:24)",
-           "    at validate (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/apollo-server-core/src/requestPipeline.ts:470:27)",
-           "    at processGraphQLRequest (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/apollo-server-core/src/requestPipeline.ts:245:30)",
+           "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/validation",
+           "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/language/",
+           "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/utilities/",
+           "    at visit (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/language/visitor",
+           "    at validate (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/validation)",
+           "    at validate (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/reqPipeline.ts:470:27)",
+           "    at processGraphQLRequest (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/Pipeline)",
            "    at runMicrotasks (<anonymous>)",
            "    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
-           "    at async processHTTPRequest (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/apollo-server-core/src/runHttpQuery.ts:346:24)"
+           "    at async processHTTPRequest (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/:346:24)"
          ]
        }
      }

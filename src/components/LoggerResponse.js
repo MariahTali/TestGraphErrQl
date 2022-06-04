@@ -21,7 +21,7 @@ function LoggerResponse(props) {
         <div onClick={handleClickSuccess}>
           <div>
             <StyledSuccess>
-              SUCCESS: &nbsp;
+              <strong>SUCCESS:</strong> <br />
               {props.query}
             </StyledSuccess>
             <div>
@@ -35,7 +35,7 @@ function LoggerResponse(props) {
         <div onClick={handleClickError}>
           <div>
             <StyledError>
-              ERROR: &nbsp;
+              <strong>ERROR:</strong> <br />
               {props.query}
             </StyledError>
           </div>

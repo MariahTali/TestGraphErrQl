@@ -6,6 +6,7 @@ export const StyledError = styled.pre`
   color: #ffffff;
   border-radius: 20px;
   padding: 20px 10px;
+  font-size: 1.25em;
 `;
 
 export const StyledSuccess = styled.pre`
@@ -14,4 +15,5 @@ export const StyledSuccess = styled.pre`
   color: #ffffff;
   border-radius: 20px;
   padding: 20px 10px;
+  font-size: 1.25em;
 `;
