@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const ErrorResponseDropdown = styled.pre`
   background-color: #e9eef0;
   border: 7px solid #ff1616;

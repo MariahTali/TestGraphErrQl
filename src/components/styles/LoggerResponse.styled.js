@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledErrorNoResponse = styled.pre`
-  background-color: #e9eef0 ;
+  background-color: #e9eef0;
   border: 7px solid #ff1616;
   color: black;
   border-radius: 20px;
