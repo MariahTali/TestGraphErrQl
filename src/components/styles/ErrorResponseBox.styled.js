@@ -8,10 +8,10 @@ const zoomAnimation = keyframes`${zoomInDown}`;
 export const ErrorResponseDropdown = styled.body`
   background-color: #aa4465;
   border: 7px solid #078aa8;
-  border-top: 0px;
+  border-top: 7px;
   border-radius: 0px 0px 15px 15px;
   padding: 20px 10px;
   color: black;
   margin-top: 0px;
-  // animation: 0.5s ${zoomAnimation};
+  // animation: 0.3s ${zoomAnimation};
 `;

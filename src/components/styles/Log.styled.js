@@ -6,13 +6,12 @@ export const StyledErrorLogNoResponse = styled.body`
   color: black;
   border-radius: 15px;
   padding: 20px 10px;
-  margin-bottom: 0px;
+  margin-bottom: 7px;
 `;
 
 export const StyledErrorLogWithResponse = styled.body`
   background-color: #aa4465;
   border: 7px solid #078aa8;
-  border-bottom: 0px;
   color: black;
   border-radius: 15px 15px 0px 0px;
   padding: 20px 10px;
