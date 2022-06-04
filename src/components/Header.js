@@ -19,7 +19,6 @@ function Header() {
     <div>
       <StyledHeader>
         <Logo src={logo} alt='Logo' />
-        {/* //if livemode is off, render play circle and querybox */}
         {liveMode ? (
           <>
             <BsToggle2On
@@ -27,7 +26,6 @@ function Header() {
               color='white'
               onClick={() => handleToggleClick()}
             />
-            {/* <LoggerBox /> */}
           </>
         ) : (
           <>
@@ -37,10 +35,8 @@ function Header() {
               color='white'
               onClick={() => handleToggleClick()}
             />
-            {/* <QueryBox /> */}
           </>
         )}
-        {/* // if livemode is on, render loggerbox and toggleonIcon */}
       </StyledHeader>
       <StyledBody>{liveMode ? <LoggerBox /> : <QueryBox />}</StyledBody>
     </div>

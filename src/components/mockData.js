@@ -38,7 +38,6 @@ export const mockData = [
        "code": "GRAPHQL_VALIDATION_FAILED",
        "exception": {
          "stacktrace": [
-           // eslint-disable-next-line no-useless-escape
            "GraphQLError: Field \\"feed\\" argument \"type\" of type \"FeedType!\" is required, but it was not provided.",
            "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/validation/rules/ProvidedRequiredArgumentsRule.js:60:15)",
            "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/language/visitor.js:326:32)",
