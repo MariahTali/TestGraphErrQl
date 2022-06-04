@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 export const mockData = [
   {
     success: true,
@@ -32,12 +33,12 @@ export const mockData = [
     response: `{
  "errors": [
    {
-     "message": "Field \"feed\" argument \"type\" of type \"FeedType!\" is required, but it was not provided.",
+     "message": "Field \\"feed\\" argument \\"type" of type "FeedType!" is required, but it was not provided.",
      "extensions": {
        "code": "GRAPHQL_VALIDATION_FAILED",
        "exception": {
          "stacktrace": [
-           "GraphQLError: Field \"feed\" argument \"type\" of type \"FeedType!\" is required, but it was not provided.",
+           "GraphQLError: Field \\"feed\\" argument \"type\" of type \"FeedType!\" is required, but it was not provided.",
            "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/validation/rules/ProvidedRequiredArgumentsRule.js:60:15)",
            "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/language/visitor.js:326:32)",
            "    at Object.leave (/Users/gwenphillips/Desktop/Codesmith/OSP/hackernews-react-graphql/node_modules/graphql/utilities/TypeInfo.js:411:21)",
@@ -130,15 +131,5 @@ export const mockData = [
  ]
 }
 `,
-  },
-  {
-    success: false,
-    query: 'Here is your query 6',
-    response: 'Response 6',
-  },
-  {
-    success: false,
-    query: 'Here is your query 7',
-    response: 'Response 7',
   },
 ];
