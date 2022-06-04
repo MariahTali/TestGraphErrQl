@@ -4,8 +4,9 @@ export const StyledBody = styled.body`
   background-color: #003845;
   border: 7px solid #078aa8;
   color: #ffffff;
-  padding: 20px 10px;
+  padding: 15px 15px;
   min-height: 70vh;
+  margin: 10px 0px 0px 0px;
 `;
 
 export const Button = styled.button`

@@ -14,7 +14,7 @@ export const StyledErrorWithResponse = styled.pre`
   border: 7px solid #ff1616;
   color: black;
   border-radius: 20px 20px 0px 0px;
-  padding: 20px 10px;
+  padding: 15px 15px;
   margin-bottom: 0px;
   font-size: 1.25em;
 `;
@@ -33,7 +33,7 @@ export const StyledSuccessWithResponse = styled.pre`
   border: 7px solid #078aa8;
   color: black;
   border-radius: 20px 20px 0px 0px;
-  padding: 20px 10px;
+  padding: 15px 15px;
   margin-bottom: 0px;
   font-size: 1.25em;
 `;
