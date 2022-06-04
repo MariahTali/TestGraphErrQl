@@ -6,4 +6,5 @@ export const StyledBody = styled.body`
   color: #ffffff;
   padding: 15px 15px;
   height: 80vh;
+  margin: 10px 0px 0px 0px;
 `;
