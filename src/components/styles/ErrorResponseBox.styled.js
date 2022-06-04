@@ -1,7 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { slideInDown, fadeInDown, zoomInDown } from 'react-animations';
+import styled from 'styled-components';
 
-const zoomAnimation = keyframes`${zoomInDown}`;
 
 export const ErrorResponseDropdown = styled.body`
   background-color: #aa4465;
@@ -13,5 +11,4 @@ export const ErrorResponseDropdown = styled.body`
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
-  animation: 0.3s ${zoomAnimation};
 `;
