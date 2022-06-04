@@ -1,6 +1,11 @@
 import { React, useState } from 'react';
 import ErrorResponseBox from './ErrorResponseBox';
-import { StyledSuccess, StyledError } from './styles/LoggerResponse.styled';
+import {
+  StyledSuccessWithResponse,
+  StyledSuccessNoResponse,
+  StyledErrorNoResponse,
+  StyledErrorWithResponse,
+} from './styles/LoggerResponse.styled';
 import SuccessResponseBox from './SuccessResponseBox';
 
 function LoggerResponse(props) {
@@ -17,32 +22,41 @@ function LoggerResponse(props) {
   //}
   return (
     <div>
-      {props.successfail ? (
+      {props.successfail && successResponse ? (
         <div onClick={handleClickSuccess}>
           <div>
-            <StyledSuccess>
-              <strong>SUCCESS:</strong> <br />
+            <StyledSuccessWithResponse>
+              <strong> SUCCESS: &nbsp; </strong> <br />
               {props.query}
-            </StyledSuccess>
-            <div>
-              {successResponse && (
-                <SuccessResponseBox response={props.response} />
-              )}
-            </div>
+            </StyledSuccessWithResponse>
+            <SuccessResponseBox response={props.response} />
+          </div>
+        </div>
+      ) : props.successfail ? (
+        <div onClick={handleClickSuccess}>
+          <div>
+            <StyledSuccessNoResponse>
+              SUCCESS: &nbsp;
+              {props.query}
+            </StyledSuccessNoResponse>
+          </div>
+        </div>
+      ) : errorResponseBox ? (
+        <div onClick={handleClickError}>
+          <div>
+            <StyledErrorWithResponse>
+              ERROR: &nbsp;
+              {props.query}
+            </StyledErrorWithResponse>
+            <ErrorResponseBox response={props.response} />
           </div>
         </div>
       ) : (
         <div onClick={handleClickError}>
-          <div>
-            <StyledError>
-              <strong>ERROR:</strong> <br />
-              {props.query}
-            </StyledError>
-          </div>
-
-          <div>
-            {errorResponseBox && <ErrorResponseBox response={props.response} />}
-          </div>
+          <StyledErrorNoResponse>
+            ERROR: &nbsp;
+            {props.query}
+          </StyledErrorNoResponse>
         </div>
       )}
     </div>
