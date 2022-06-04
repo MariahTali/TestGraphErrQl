@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import LoggerResponse from './LoggerResponse';
 import { mockData } from './mockData';
+import { Button } from './styles/LoggerBox.styled.js';
 
 function LoggerBox() {
   const [arrayIndex, setArrayIndex] = useState(0);
@@ -23,13 +24,13 @@ function LoggerBox() {
   };
   return (
     <>
-      <button
+      <Button
         onClick={() => {
           updateIndex();
         }}
       >
-        Simulate Query
-      </button>
+        <strong>Simulate Query!</strong>
+      </Button>
       <div>{responseArray}</div>
     </>
   );

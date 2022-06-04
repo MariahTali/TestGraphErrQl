@@ -5,7 +5,7 @@ export const SuccessResponseDropdown = styled.pre`
   border: 7px solid #078aa8;
   border-top: 0px;
   border-radius: 0px 0px 20px 20px;
-  padding: 20px 10px;
+  padding: 15px 15px;
   color: black;
   margin-top: 0px;
   font-size: 1.25em;
