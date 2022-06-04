@@ -26,7 +26,7 @@ function LoggerResponse(props) {
         <div onClick={handleClickSuccess}>
           <div>
             <StyledSuccessWithResponse>
-              SUCCESS: &nbsp;
+              <strong> SUCCESS: &nbsp; </strong> <br />
               {props.query}
             </StyledSuccessWithResponse>
             <SuccessResponseBox response={props.response} />

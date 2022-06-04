@@ -11,4 +11,5 @@ export const ErrorResponseDropdown = styled.body`
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
+  font-size: 1.25em;
 `;

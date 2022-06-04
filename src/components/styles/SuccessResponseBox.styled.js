@@ -8,4 +8,5 @@ export const SuccessResponseDropdown = styled.pre`
   padding: 20px 10px;
   color: #003845;
   margin-top: 0px;
+  font-size: 1.25em;
 `;

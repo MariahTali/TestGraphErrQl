@@ -6,6 +6,7 @@ export const StyledErrorNoResponse = styled.pre`
   color: #ffffff;
   border-radius: 20px;
   padding: 20px 10px;
+  font-size: 1.25em;
 `;
 
 export const StyledErrorWithResponse = styled.pre`
@@ -23,6 +24,7 @@ export const StyledSuccessNoResponse = styled.pre`
   color: #ffffff;
   border-radius: 20px;
   padding: 20px 10px;
+  font-size: 1.25em;
 `;
 
 export const StyledSuccessWithResponse = styled.pre`
