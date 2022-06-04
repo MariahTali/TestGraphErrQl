@@ -36,7 +36,7 @@ function LoggerResponse(props) {
         <div onClick={handleClickSuccess}>
           <div>
             <StyledSuccessNoResponse>
-              SUCCESS: &nbsp;
+              <strong> SUCCESS: &nbsp; </strong> <br />
               {props.query}
             </StyledSuccessNoResponse>
           </div>
@@ -45,7 +45,7 @@ function LoggerResponse(props) {
         <div onClick={handleClickError}>
           <div>
             <StyledErrorWithResponse>
-              ERROR: &nbsp;
+              <strong> ERROR: &nbsp; </strong> <br />
               {props.query}
             </StyledErrorWithResponse>
             <ErrorResponseBox response={props.response} />
@@ -54,7 +54,7 @@ function LoggerResponse(props) {
       ) : (
         <div onClick={handleClickError}>
           <StyledErrorNoResponse>
-            ERROR: &nbsp;
+            <strong> ERROR: &nbsp; </strong> <br />
             {props.query}
           </StyledErrorNoResponse>
         </div>
