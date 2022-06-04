@@ -4,7 +4,6 @@ import { StyledSuccess, StyledError } from './styles/LoggerResponse.styled'
 import SuccessResponseBox from './SuccessResponseBox'
 
 function LoggerResponse(props) {
-  console.log(props.response);
 const [errorResponseBox, setErrorResponseBox] = useState(false)
 const [successResponse, setSuccessResponse] = useState(false);
 
