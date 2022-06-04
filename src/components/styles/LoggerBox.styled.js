@@ -8,3 +8,12 @@ export const StyledBody = styled.body`
   height: 80vh;
   overflow-y: scroll;
 `;
+
+export const Button = styled.button`
+  background-color: #078aa8;
+  border: 4px solid #ffffff;
+  color: #003845;
+  font-size: 1em;
+  padding: 15px 15px;
+  border-radius: 20px;
+`;

@@ -10,6 +10,6 @@ export const StyledHeader = styled.header`
 
 export const Logo = styled.img`
   object-fit: contain;
-  height: 170px;
+  height: 200px;
   margin-right: 10px;
 `;
