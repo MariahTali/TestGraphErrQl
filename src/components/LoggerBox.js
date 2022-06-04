@@ -1,42 +1,37 @@
-import { React, useState} from 'react';
+import { React, useState } from 'react';
 import LoggerResponse from './LoggerResponse';
 import { mockData } from './mockData';
 
-const responseArray = [];
-
 function LoggerBox() {
-  let index = 0;
   const [arrayIndex, setArrayIndex] = useState(0);
+  const [responseArray, setResponseArray] = useState([]);
 
   const updateIndex = () => {
-    setArrayIndex(arrayIndex + 1);
-    index = arrayIndex;
+    if (arrayIndex < 5) {
+      setArrayIndex((num) => num + 1);
+
+      setResponseArray((resArray) => [
+        ...resArray,
+        <LoggerResponse
+          key={arrayIndex}
+          successfail={mockData[arrayIndex].success}
+          query={mockData[arrayIndex].query}
+          response={mockData[arrayIndex].response}
+        />,
+      ]);
+    }
   };
-
-  const addNextItemToArray = (index) => {
-    responseArray.push(mockData[index])
-  };
-
-const newArray = []
-
-for (let i = 0; i < responseArray.length; i++) {
-  newArray.push(<LoggerResponse key = {i} successfail = {responseArray[i].success} query = {responseArray[i].query} response = {responseArray[i].response}/>)  
-}
-
-  return(
+  return (
     <>
       <button
         onClick={() => {
           updateIndex();
-          addNextItemToArray(index);
-        }}>
+        }}
+      >
         Simulate Query
       </button>
-     <div>
-       {newArray}
-     </div>
+      <div>{responseArray}</div>
     </>
-  )
+  );
 }
-
 export default LoggerBox;
