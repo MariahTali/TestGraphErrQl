@@ -5,7 +5,7 @@ export const StyledBody = styled.body`
   border: 7px solid #078aa8;
   color: #ffffff;
   padding: 20px 10px;
-  height: 80vh;
+  min-height: 70vh;
 `;
 
 export const Button = styled.button`
